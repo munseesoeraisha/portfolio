@@ -1,21 +1,139 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial;
-    background: #0f172a;
-    color: white;
-    text-align: center;
 }
 
-input, textarea {
-    width: 250px;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: none;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#f7c8d0;
+
+    border-bottom:2px solid black;
 }
 
-button {
-    padding: 10px 20px;
-    background: #38bdf8;
-    border: none;
-    border-radius: 5px;
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+body{
+    background:#f5efe7;
+}
+
+.contact-container{
+    background:white;
+
+    padding:50px;
+
+    width:450px;
+
+    border-radius:20px;
+
+    border:3px solid black;
+
+    text-align:center;
+
+    margin:80px auto;
+}
+
+.contact-container h1{
+    margin-bottom:30px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:15px;
+
+    border:2px solid black;
+
+    border-radius:10px;
+
+    font-size:16px;
+}
+
+textarea{
+    height:140px;
+    resize:none;
+}
+
+button{
+    padding:15px;
+
+    border:none;
+
+    background:#f7c8d0;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+}
+
+.socials{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.socials i{
+    font-size:30px;
+    cursor:pointer;
+}
+
+.back-btn{
+    display:inline-block;
+
+    margin-top:30px;
+
+    text-decoration:none;
+
+    color:black;
+
+    font-weight:bold;
+}
+
+.contact-container{
+    margin:80px auto;
+}
+
+footer{
+    background:#f7c8d0;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:80px;
+
+    border-top:2px solid black;
 }

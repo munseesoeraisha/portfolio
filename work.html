@@ -1,27 +1,134 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Mijn Werk</title>
-    <link rel="stylesheet" href="./css/work.css">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>My Work</title>
+
+    <link rel="stylesheet"
+    href="css/work.css">
+
 </head>
+
 <body>
 
-<h1>Mijn Projecten</h1>
+    <!-- NAVBAR -->
 
-<div class="projects">
-    <div class="card">
-        <h2>Portfolio Website</h2>
-        <p>Mijn eerste website project.</p>
-    </div>
+    <nav>
 
-    <div class="card">
-        <h2>Login Systeem</h2>
-        <p>Een simpel login systeem.</p>
-    </div>
-</div>
+        <div class="logo">&lt;Qwerty/&gt;</div>
 
-<a href="./index.html">← Terug</a>
+        <ul class="nav-links">
 
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="work.html">Work</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+   <!-- WORK SECTION -->
+
+    <section class="work">
+
+        <h1>My Projects</h1>
+
+        <div class="project-container">
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <img src="img/flowers.png" alt="Flower App">
+
+                <h2>Flower Shop App</h2>
+
+                <p>
+                    A modern flower shopping application where users can browse flowers,
+                    place orders, and explore beautiful floral collections.
+                </p>
+
+                <button onclick="toggleText(this)">
+                    View Project
+                </button>
+
+                <div class="extra-text">
+                    <p>
+                        This project was designed with a soft and modern user interface.
+                        The application allows customers to explore flower categories,
+                        view product details, and enjoy a responsive shopping experience
+                        on both desktop and mobile devices.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <img src="img/bank.png" alt="Banking Website">
+
+                <h2>Banking Website</h2>
+
+                <p>
+                    A professional banking website with a clean layout
+                    and secure modern design.
+                </p>
+
+                <button onclick="toggleText(this)">
+                    View Project
+                </button>
+
+                <div class="extra-text">
+                    <p>
+                        This website was created to provide users with an easy and secure
+                        online banking experience. It includes sections for account management,
+                        online transactions, financial services, and customer support.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <img src="img/food.png" alt="Cooking Website">
+
+                <h2>Cooking Video Website</h2>
+
+                <p>
+                    A responsive cooking platform where users can watch
+                    recipe and cooking tutorial videos.
+                </p>
+
+                <button onclick="toggleText(this)">
+                    View Project
+                </button>
+
+                <div class="extra-text">
+                <p>
+                    This project focuses on food and cooking content.
+                    Users can explore recipes, watch step-by-step cooking tutorials,
+                    and discover different cuisines through a clean and engaging layout.
+                </p>
+            </div>
+    </section>
+    
+
+    <footer>
+    <p>© 2026 Soeraisha Munsee | Portfolio</p>
+</footer>
+<script src="js/work.js"></script>
 </body>
 </html>
