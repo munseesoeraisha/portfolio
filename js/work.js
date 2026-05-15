@@ -1,18 +1,20 @@
-function toggleText(button){
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".toggle-btn");
 
-    const extraText =
-    button.nextElementSibling;
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            const card = this.closest(".project-card");
+            const extraText = card.querySelector(".extra-text");
 
-    extraText.classList.toggle("show");
+            // toggle visibility
+            extraText.classList.toggle("show");
 
-    if(extraText.classList.contains("show")){
-
-        button.innerText = "Hide Project";
-
-    } else {
-
-        button.innerText = "View Project";
-
-    }
-
-}
+            // change button text
+            if (extraText.classList.contains("show")) {
+                this.innerText = "Hide Project";
+            } else {
+                this.innerText = "View Project";
+            }
+        });
+    });
+});
