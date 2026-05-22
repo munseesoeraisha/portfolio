@@ -423,3 +423,48 @@ footer{
     text-decoration:none;
     color:black;
 }
+
+/* MENU ICON */
+
+.menu-icon{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* MOBILE MENU */
+
+@media(max-width:768px){
+
+    .menu-icon{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+
+        top:80px;
+        right:0;
+
+        background:#f7c8d0;
+
+        width:220px;
+
+        flex-direction:column;
+
+        padding:30px;
+
+        gap:20px;
+
+        display:none;
+
+        border-left:2px solid black;
+
+        border-bottom:2px solid black;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+}
