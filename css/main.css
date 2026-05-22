@@ -456,11 +456,14 @@ footer{
 
         gap:20px;
 
-        display:none;
+        display: none !important;
 
         border-left:2px solid black;
 
         border-bottom:2px solid black;
+    }
+    .active{
+        display: flex !important;
     }
 
     .nav-links.active{

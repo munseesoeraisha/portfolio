@@ -1,35 +1,38 @@
-const contactBtn =
-document.querySelector(".contact-btn");
-
-const contactSidebar =
-document.querySelector(".contact-sidebar");
-
-const closeSidebar =
-document.querySelector(".close-sidebar");
-
-
-contactBtn.onclick = function(){
-
-    contactSidebar.classList.add("show");
-
-};
-
-
-closeSidebar.onclick = function(){
-
-    contactSidebar.classList.remove("show");
-
-};
-
 const menuIcon =
 document.querySelector(".menu-icon");
 
 const navLinks =
 document.querySelector(".nav-links");
 
+const navItems =
+document.querySelectorAll(".nav-links a");
 
-menuIcon.addEventListener("click", () => {
 
-    navLinks.classList.toggle("active");
+// ONLY RUN IF MENU EXISTS
 
-});
+if(menuIcon && navLinks){
+
+    menuIcon.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+}
+
+
+// CLOSE MENU WHEN CLICKING LINKS
+
+if(navItems){
+
+    navItems.forEach((item) => {
+
+        item.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+}
